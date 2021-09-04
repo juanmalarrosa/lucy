@@ -972,13 +972,16 @@ background: linear-gradient(90deg, rgba(144,2,234,1) 0%, rgba(0,23,195,1) 100%);
   }
   
 
-
+body{
+    letter-spacing: -0.05em;
+}
 .c-title{
     color: #fff;
     font-size: 3.2em;
     position: relative;
     font-weight: 700;
     text-align: center;
+    letter-spacing: -0.05em;
 }
 .c-title:after{
     content: "";
@@ -1031,15 +1034,20 @@ background: linear-gradient(90deg, rgba(144,2,234,1) 0%, rgba(0,23,195,1) 100%);
       font-size: 4em;
       line-height:0.9;
       color: #fff;
-      letter-spacing: -0.01em;
+      letter-spacing: -0.05em;
 }
-/*
+
 .c-hero-title__mark{
-      border-radius: 15px;
-      background: rgb(144,2,234);
-      background: linear-gradient(90deg,  rgba(0,23,195,1) 0%, rgba(144,2,234,1) 100%);
+    background: rgb(144,2,234);
+      background: linear-gradient(60deg,  rgba(0,23,195,1) 0%, rgba(144,2,234,0.8) 100%);
+    background-size: 100%;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     
 }
-*/
+
 .c-hero__text{
       margin-top: 20px;
       color: #fff;

@@ -98,6 +98,30 @@ html{
       font-style: italic;
   }
 
+  @font-face {
+      font-family: 'gotham_htf';
+      src: url('fonts/gothamhtf-bold-webfont.eot');
+      src: url('fonts/gothamhtf-bold-webfont.eot?#iefix') format('embedded-opentype'),
+           url('fonts/gothamhtf-bold-webfont.woff2') format('woff2'),
+           url('fonts/gothamhtf-bold-webfont.woff') format('woff'),
+           url('fonts/gothamhtf-bold-webfont.ttf') format('truetype'),
+           url('fonts/gothamhtf-bold-webfont.svg#gotham_htfbold') format('svg');
+      font-weight: 700;
+      font-style: normal;
+  }
+  
+  @font-face {
+      font-family: 'gotham_htf';
+      src: url('fonts/gothamhtf-bolditalic-webfont.eot');
+      src: url('fonts/gothamhtf-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+           url('fonts/gothamhtf-bolditalic-webfont.woff2') format('woff2'),
+           url('fonts/gothamhtf-bolditalic-webfont.woff') format('woff'),
+           url('fonts/gothamhtf-bolditalic-webfont.ttf') format('truetype'),
+           url('fonts/gothamhtf-bolditalic-webfont.svg#gotham_htfbold_italic') format('svg');
+      font-weight: 700;
+      font-style: italic;
+  }
+
 
   
 body{
@@ -947,7 +971,26 @@ background: linear-gradient(90deg, rgba(144,2,234,1) 0%, rgba(0,23,195,1) 100%);
   
   }
   
-  
+
+
+.c-title{
+    color: #fff;
+    font-size: 3.2em;
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+}
+.c-title:after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 80px;
+    height: 3px;
+    border-radius: 15px;
+    background: rgb(144,2,234);
+    background: linear-gradient(90deg,  rgba(0,23,195,1) 0%, rgba(144,2,234,1) 100%);
+}
 
 
 /* HERO */
@@ -956,10 +999,10 @@ background: linear-gradient(90deg, rgba(144,2,234,1) 0%, rgba(0,23,195,1) 100%);
       position: relative;
       background-image: url(images/hero.jpg);
       background-size: cover;
-      background-position: 60% -180px;
+      background-repeat: no-repeat;
+      background-position: 60% -120px;
       height: 85vh;
       padding-top: 70px;
-      background-attachment: fixed;
 }
 .c-hero::before{
       content: "";
@@ -1009,7 +1052,7 @@ background: linear-gradient(90deg, rgba(144,2,234,1) 0%, rgba(0,23,195,1) 100%);
 /* CTA */
 
 .c-cta{
-      padding: 30px 25px;
+      padding: 35px 25px;
       border-radius: 15px;
       margin-top: 55px;
       background: rgb(144,2,234);
@@ -1017,7 +1060,7 @@ background: linear-gradient(90deg, rgba(144,2,234,1) 0%, rgba(0,23,195,1) 100%);
 }
 .c-cta__title{
       color: #fff;
-      font-size: 1.6em;
+      font-size: 1.8em;
       text-align: center;
 }
 .c-cta__form{
@@ -1026,10 +1069,51 @@ background: linear-gradient(90deg, rgba(144,2,234,1) 0%, rgba(0,23,195,1) 100%);
 .c-cta__input{
       display: block;
       width: 100%;
-      padding: 13px 15px;
+      padding: 13px 17px;
       font-size: 1.5em;
       border-radius: 15px;
       background: #fff;
 }
+.c-cta__btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    background: #000020;
+    color: #fff;
+    padding: 13px 30px;
+      font-size: 1.5em;
+      border-radius: 15px;
+      font-weight: 700;
+}
 
 
+/* BENEFITS */
+
+.c-benefits-list{
+    margin: 0 -20px;
+    margin-top: 30px;
+}
+.c-benefits-item{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 15px;
+}
+.c-benefits-item__holder{
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+}
+.c-benefits-item__title{
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: 700;
+}
+.c-benefits-item__text{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 1.4em;
+    line-height: 1.4;
+    opacity: .8;
+}

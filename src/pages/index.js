@@ -26,7 +26,7 @@ const Index = ({ data, location }) => {
             <p className="c-cta__title">Registrate para el pre-lanzamiento y <strong>obtené 6 meses de recomendaciones gratis</strong></p>
             <form className="c-cta__form">
               <input className="c-cta__input" placeholder="Ingresa tu email..." />
-              <button type="submit" className="c-cta__btn"></button>
+              <button type="submit" className="c-cta__btn">Enviar</button>
             </form>
           </div>
         </div>

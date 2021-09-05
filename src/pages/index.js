@@ -274,7 +274,7 @@ para hacerlo crecer.</p>
 
                     <Field name="email" type="email" className="c-cta__input" placeholder="Ingresá tu email..." />
 
-                    <label for="email" className="c-cta__error"><ErrorMessage name="email" /></label>
+                    <label htmlFor="email" className="c-cta__error"><ErrorMessage name="email" /></label>
 
                     <div data-netlify-recaptcha="true"></div>
 

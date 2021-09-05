@@ -10,7 +10,7 @@ const Layout = ({ location, title, children }) => {
         <div className="c-header__holder">
           <div className="c-header__wrapper o-wrapper o-align-middle">{/*
                     */}<div className="o-align-middle__aligner">
-              <button type="button" className="c-header__nav-btn js-show-nav" title="Ver/ocultar menú"><span className="c-header__hamburger" /></button>
+              {/*<button type="button" className="c-header__nav-btn js-show-nav" title="Ver/ocultar menú"><span className="c-header__hamburger" /></button>*/}
               <h1 className="c-header__h1">
                 <a href="/" className="c-header__logo" tabIndex={-1}>
                   <span className="u-hidden-for-seo">Lucy</span>

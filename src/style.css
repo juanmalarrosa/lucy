@@ -305,7 +305,7 @@ background: linear-gradient(90deg, rgba(144,2,234,1) 0%, rgba(0,23,195,1) 100%);
     position: relative;
     width: 100%;
     height: 0;
-    padding-bottom: 13.47%;
+    padding-bottom: 17%;
 }
 
 .c-header__logo:before {
@@ -1054,7 +1054,7 @@ body{
 /* CTA */
 
 .c-cta{
-      padding: 30px 25px;
+      padding: 30px 25px 35px;
       border-radius: 15px;
       margin-top: 45px;
       background: rgb(144,2,234);
@@ -1079,6 +1079,7 @@ body{
 }
 .c-cta__btn{
     display: block;
+    width: 100%;
     margin: 0 auto;
     margin-top: 15px;
     background: #000020;

@@ -33,7 +33,7 @@ const Index = ({ data, location }) => {
       </section>
 
       {/* BENEFITS */}
-      <section className="c-benefits o-section">
+      <section id="benefits" className="c-benefits o-section">
         <div className="o-wrapper">
           <h2 className="c-title">¿Por qué usar Lucy?</h2>
           <ul className="c-benefits-list">
@@ -87,7 +87,7 @@ para hacerlo crecer.</p>
 
 
       {/* HOW IT WORKS */}
-      <section className="c-works o-section">
+      <section id="works" className="c-works o-section">
         <div className="o-wrapper">
           <h2 className="c-title">¿Cómo funciona?</h2>
 

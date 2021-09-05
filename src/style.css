@@ -480,14 +480,6 @@ img{
         margin-left: 0;
     }
     
-    .c-nav__btn--demo{
-        font-size: 1.3rem;
-    }
-    
-    .c-admin-btn-mobile{
-        right: 220px;
-    }
-    
   
 }
 
@@ -547,12 +539,13 @@ img{
       }
       .c-nav__link:after {
           content: "";
-          width: 100%;
-          height: 1px;
+          width: 20%;
+          height: 2px;
           position: absolute;
-          top: 110%;
-          left: 0;
-          background-color: rgba(26,46,53,.9);
+          bottom: -10px;
+          left: 40%;
+          
+          background-color: #fff;
           -webkit-transform: scaleX(0);
           -moz-transform: scaleX(0);
           -o-transform: scaleX(0);
@@ -627,6 +620,10 @@ img{
         padding: 12px 24px 14px;
     }
     
+    .c-nav__btn--admin:hover,
+    .c-nav__btn--admin:focus{
+        background: #5313d8;
+    }
 
     
 }
@@ -893,7 +890,6 @@ body{
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 60% -120px;
-      height: 85vh;
       padding-top: 70px;
 }
 .c-hero::before{
@@ -967,6 +963,13 @@ body{
       font-size: 1.5em;
       border-radius: 25px;
       background: #fff;
+      box-shadow: 0 0 0px 4px transparent;
+      color: #000;
+
+      transition: box-shadow 250ms ease-out;
+}
+.c-cta__input:focus{
+    box-shadow: 0 0 0px 4px #000;
 }
 .c-cta__btn{
     display: block;
@@ -1025,6 +1028,9 @@ body{
 
     /* BENEFITS */
 
+    .c-benefits-item{
+        margin-top: 22px;
+    }
     .c-benefits-item__holder{
         position: relative;
     }
@@ -1173,6 +1179,10 @@ body{
     }
     .c-cta__btn{
         right: 35px;
+    }
+    .c-cta__btn:hover,
+    .c-cta__btn:focus{
+        background: #5313d8;
     }
     .c-cta__input{
         padding-right: 120px;

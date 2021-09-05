@@ -26,7 +26,7 @@ const Layout = ({ location, title, children }) => {
                           <a className="c-nav__link js-nav__anchor" href="#benefits">¿Por qué usar Lucy?</a>
                         </li>
                         <li className="c-nav__item">
-                          <a className="c-nav__link js-nav__anchor" href="#software">¿Cómo funciona?</a>
+                          <a className="c-nav__link js-nav__anchor" href="#works">¿Cómo funciona?</a>
                         </li>
                       </ul>
                       <ul className="c-nav__buttons">

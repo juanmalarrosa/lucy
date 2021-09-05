@@ -174,6 +174,43 @@ para hacerlo crecer.</p>
         <div className="o-wrapper">
           <h2 className="c-title">¿Cómo funciona?</h2>
 
+          <ul className="c-works-list">
+
+            <li className="c-works-item">
+
+              <div className="c-works-item__img"></div>
+
+              <div className="c-works-item__aligner">
+                <h3 className="c-works-item__title">1. Elegí las acciones que más te gusten</h3>
+                <p className="c-works-item__text">Seleccioná las acciones que quieras seguir, pueden ser de tu lista personal, las más populares entre los demás usuarios o las de mayor potencial según Lucy.</p>
+              </div>
+
+            </li>
+            <li className="c-works-item c-works-item--right">
+
+              <div className="c-works-item__img"></div>
+
+              <div className="c-works-item__aligner">
+                <h3 className="c-works-item__title">2. Lucy te avisa cuándo comprarlas</h3>
+                <p className="c-works-item__text">Lucy analiza tu selección para identificar la mejor oportunidad de compra, buscando que ésta sea alcanzable y segura. Una vez que la encuentra, te avisa el momento óptimo para ejecutarla.</p>
+              </div>
+
+
+            </li>
+            <li className="c-works-item">
+
+              <div className="c-works-item__img"></div>
+
+              <div className="c-works-item__aligner">
+                <h3 className="c-works-item__title">3. También te avisa cuándo venderlas</h3>
+                <p className="c-works-item__text">Lucy permanece atenta a tu oportunidad, monitoreando el movimiento del activo. Al cumplirse su predicción, vuelve a enviarte una notificación indicando que es tiempo de vender.</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+
         </div>
       </section>
 

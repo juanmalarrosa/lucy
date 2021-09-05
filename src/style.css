@@ -891,7 +891,7 @@ body{
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 60% -120px;
-      padding-top: 70px;
+      padding-top: 95px;
 }
 .c-hero::before{
       content: "";
@@ -993,8 +993,9 @@ body{
     text-align: center;
 }
 .c-cta__message{
+    text-align: center;
     color: #cfff5f;
-    font-size: 2.4em;
+    font-size: 2em;
     line-height: 1.2em;
 }
 
@@ -1074,6 +1075,42 @@ body{
     }
 }
 
+
+/* WORKS */
+
+.c-works-list{
+    margin-top: 30px;
+}
+.c-works-item{
+    margin-top: 40px;   
+    text-align: center;
+}
+.c-works-item__title{
+    font-size: 2.2em;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.c-works-item__text{
+    margin-top: 10px;
+    opacity: .7;
+    color: #fff;
+    font-size: 1.5em;
+    line-height: 1.4;
+    opacity: .8;
+}
+.c-works-item__img{
+    position: relative;
+    background-image: url(images/work-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.c-works-item__img::before{
+    content: "";
+    display: block;
+    padding-bottom: 115%;
+}
 
 /* FOOTER */
 
@@ -1181,6 +1218,10 @@ body{
     }
     .c-cta__error{
         text-align: left;
+    }
+    .c-cta__message{
+        text-align: left;
+        font-size: 2.4em;
     }
 
 

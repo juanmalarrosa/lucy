@@ -56,7 +56,7 @@ const Seo = ({ description, lang, meta, title }) => {
         },
         {
           name: `keywords`,
-          content: 'inversion,brokers,bot',
+          content: 'TODO',
         },
       ].concat(meta)}
     />

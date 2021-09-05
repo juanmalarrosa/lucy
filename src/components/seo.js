@@ -13,7 +13,6 @@ import { useStaticQuery, graphql } from "gatsby"
 const Seo = ({ description, lang, meta, title }) => {
 
   const metaDescription = description 
-  const defaultTitle = 'lucy'
 
   return (
     <Helmet
@@ -21,7 +20,7 @@ const Seo = ({ description, lang, meta, title }) => {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+     
       meta={[
         {
           name: `description`,

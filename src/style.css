@@ -226,7 +226,7 @@ img{
 
 .o-wrapper{
     width: 100%;
-    max-width: 1440px;
+    max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 22px;
@@ -265,8 +265,8 @@ img{
 
 /* HEADER */
 
-.c-header{
-  
+.c-header.is-fixed .c-header__holder{
+    background: #0d0e2b;
 }
 
 .c-header__holder{
@@ -276,16 +276,10 @@ img{
     left: 0;
     top: 0;
     z-index: 1000;
-    /*
-    background: rgb(144,2,234);
-background: linear-gradient(90deg, rgba(144,2,234,1) 0%, rgba(0,23,195,1) 100%);
-*/
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
 }
 
 .c-header__wrapper{
     height: 100%;
-    
     z-index: 0;
 }
 
@@ -341,8 +335,9 @@ background: linear-gradient(90deg, rgba(144,2,234,1) 0%, rgba(0,23,195,1) 100%);
     display: block;
     width: 23px;
     height: 3px;
+    border-radius: 15px;
     position: absolute;
-    background-color: #0D3B7A;
+    background-color: #ffffff;
 }
 .c-header__hamburger{
     top: 50%;
@@ -499,66 +494,15 @@ background: linear-gradient(90deg, rgba(144,2,234,1) 0%, rgba(0,23,195,1) 100%);
 
 
 
-/* ********************** de Desktop a DESKTOP 2 ********************** */
-
-@media (min-width: 1200px) {
-    
-    /* STRUCTURE */
-    
-    .o-section{
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
-    .o-section--b{
-        padding-bottom: 80px;
-    }
-
-    .o-section--t{
-        padding-top: 80px;
-    }
-    
-    /* NAV */
-    
-    .c-nav__item{
-        margin-left: 42px;
-    }
-    
-    .c-nav__item:first-child{
-        margin-left: 0;
-    }
-
-    .c-nav__link{
-        font-size: 1.5rem;
-    }
-    
-    .c-nav__btn{
-        font-size: 1.4rem;
-        padding: 12px 27px 14px;
-    }
-    
- 
-}
-@media (min-width: 1200px) and (min-height: 790px){
-}
-
-
-
-
 /* ********************** de Desktop 2 a HD ********************** */
 
-@media (min-width: 1440px) {
+@media (min-width: 980px) {
     
     /* STRUCTURE */
     
     .o-wrapper{
-        padding-right: 80px;
-        padding-left: 80px;
-    }
-    
-    .o-section{
-        padding-top: 90px;
-        padding-bottom: 90px;
+        padding-right: 60px;
+        padding-left: 60px;
     }
 
     .o-section--b{
@@ -571,63 +515,159 @@ background: linear-gradient(90deg, rgba(144,2,234,1) 0%, rgba(0,23,195,1) 100%);
     
     
     /* HEADER */
+
+
+     /* HEADER */
+      
+     .c-header,
+     .c-header__holder{
+         -webkit-transition: height 200ms ease-in-out;
+         -moz-transition: height 200ms ease-in-out;
+         -o-transition: height 200ms ease-in-out;
+         transition: height 200ms ease-in-out;
+     }
+     .c-header.is-fixed,
+     .c-header.is-fixed .c-header__holder{
+         -webkit-transition: height 200ms ease-in-out;
+         -moz-transition: height 200ms ease-in-out;
+         -o-transition: height 200ms ease-in-out;
+         transition: height 200ms ease-in-out;
+     }
+     
+   
+
+      /* NAV */
+      
+      .c-header__nav.o-scrollable{
+          overflow: visible;
+          overflow-y: visible;
+      }
+      .c-nav__link{
+          color: #fff;
+      }
+      .c-nav__link:after {
+          content: "";
+          width: 100%;
+          height: 1px;
+          position: absolute;
+          top: 110%;
+          left: 0;
+          background-color: rgba(26,46,53,.9);
+          -webkit-transform: scaleX(0);
+          -moz-transform: scaleX(0);
+          -o-transform: scaleX(0);
+          transform: scaleX(0);
+      }
+  
+      .c-nav__link:hover:after,
+      .c-nav__link:focus:after {
+          -webkit-transform: scaleX(1);
+          -moz-transform: scaleX(1);
+          -o-transform: scaleX(1);
+          transform: scaleX(1);
+          -webkit-transition: transform 300ms ease-out;
+          -moz-transition: transform 300ms ease-out;
+          -o-transition: transform 300ms ease-out;
+          transition: transform 300ms ease-out;
+      }
+
+  
+      
+
     
     .c-header{
-        height: 100px;
+        
     }
     
     .c-header.is-fixed{
-        height: 70px;
+        
     }
     .c-header.is-fixed .c-header__holder{
-        height: 70px;
+        
     }
     
     .c-header__holder{
-        height: 100px;
+        height: 90px;
     }
     
     .c-header__h1{
-        width: 275px;   
+        width: 220px;   
     }
     
     .c-header__nav{
-        padding-left: 335px;
+        padding-left: 240px;
+        padding-right: 240px;
+        text-align: right;
     }
     
     /* NAV */
     
     .c-nav__item{
-        margin-left: 50px;
+        margin-left: 40px;
     }
-    
     .c-nav__item:first-child{
         margin-left: 0;
     }
-
     .c-nav__link{
         font-size: 1.6rem;
+        font-weight: 700;
     }
-    
     .c-nav__buttons{
-        right: 50%;
-        margin-right: -640px;
+        right: 60px;
     }
-    
     .c-nav__btn{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        font-weight: 700;
     }
     
     .c-nav__btn--admin{
-        padding: 12px 42px 14px 32px;
+        background: #006bff;
+        color: #fff;
+        border-radius: 25px;
+        padding: 12px 24px 14px;
     }
     
-    .c-nav__btn--admin:after {
-        right: 24px;
-    }
-    
+
     
 }
+
+
+/* ********************** de Desktop a DESKTOP 2 ********************** */
+
+@media (min-width: 1200px) {
+    
+    /* STRUCTURE */
+    
+    .o-section{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .o-section--b{
+        padding-bottom: 80px;
+    }
+
+    .o-section--t{
+        padding-top: 80px;
+    }
+    
+    /* NAV */
+
+    .c-nav__buttons{
+        right: 50%;
+        margin-right: -530px;
+    }
+    
+    .c-nav__item{
+        margin-right: 20px;
+    }
+    
+  
+
+    
+ 
+}
+
 
 
 /*  HEADER  */
@@ -664,20 +704,7 @@ background: linear-gradient(90deg, rgba(144,2,234,1) 0%, rgba(0,23,195,1) 100%);
       transition-delay: 100ms;
   }
   
-  /* NAV */
-  
-  .c-nav__link:before{
-      content: "";
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 100%;
-      height: 48px;
-      min-width: 48px;
-      margin-top: -24px;
-  }
-  
+
   /* ************ max-width: 979px ************** */
   
   
@@ -824,153 +851,14 @@ background: linear-gradient(90deg, rgba(144,2,234,1) 0%, rgba(0,23,195,1) 100%);
           padding: 18px 0;
       }
       
-  
-      .c-nav__item.is-visible .c-nav__link:after {
-          margin-top: 14px;
-          top: 11px;
-          border-color: #35a2da;
-          -webkit-transform: rotate(315deg);
-          -moz-transform: rotate(315deg);
-          -o-transform: rotate(315deg);
-          transform: rotate(315deg);
-          -webkit-transition: transform 200ms ease-in-out;
-          -moz-transition: transform 200ms ease-in-out;
-          -o-transition: transform 200ms ease-in-out;
-          transition: transform 200ms ease-in-out;
-      }
       
+  }
+  
 
-  
-      
-  }
-  
-  /* ********************** MOBILE LANDSCAPE ********************** */
-  
-  @media (orientation: landscape) and (min-width: 500px) and (max-width: 767px) {
-      
-      .c-nav__items {
-          padding-top: 0; 
-      }
-      
-      .c-nav__link {
-          padding: 14px 0;
-      }
-      
-  }
-  
-  /* ********************** de Mobile a TABLET ********************** */
-  
-  @media (min-width: 768px) {
-      
-      .c-text{
-          font-size: 1.4rem;
-      }
-      
-    
-  }
-  
-  
-  /* ********************** de Tablet a DESKTOP ********************** */
-  
-  @media (min-width: 980px) {
-      
-      
-      /* NAV */
-      
-      .c-header__nav.o-scrollable{
-          overflow: visible;
-          overflow-y: visible;
-      }
-      
-      .c-nav__link:after {
-          content: "";
-          width: 100%;
-          height: 1px;
-          position: absolute;
-          top: 110%;
-          left: 0;
-          background-color: rgba(26,46,53,.9);
-          -webkit-transform: scaleX(0);
-          -moz-transform: scaleX(0);
-          -o-transform: scaleX(0);
-          transform: scaleX(0);
-      }
-  
-      .c-nav__link:hover:after,
-      .c-nav__link:focus:after {
-          -webkit-transform: scaleX(1);
-          -moz-transform: scaleX(1);
-          -o-transform: scaleX(1);
-          transform: scaleX(1);
-          -webkit-transition: transform 300ms ease-out;
-          -moz-transition: transform 300ms ease-out;
-          -o-transition: transform 300ms ease-out;
-          transition: transform 300ms ease-out;
-      }
 
-  
-      
-  }
-  
-  
-  
-  /* ********************** de Desktop a DESKTOP 2 ********************** */
-  
-  @media (min-width: 1200px) {
-      
-      .c-text {
-          font-size: 1.6rem;
-      }
-      
-      /* HEADER */
-      
-   
-  }
-  
-  
-  
-  /* ********************** de Desktop 2 a HD ********************** */
-  
-  @media (min-width: 1440px) {
-      
-      /* HEADER */
-      
-      .c-header,
-      .c-header__holder{
-          -webkit-transition: height 200ms ease-in-out;
-          -moz-transition: height 200ms ease-in-out;
-          -o-transition: height 200ms ease-in-out;
-          transition: height 200ms ease-in-out;
-      }
-      .c-header.is-fixed,
-      .c-header.is-fixed .c-header__holder{
-          -webkit-transition: height 200ms ease-in-out;
-          -moz-transition: height 200ms ease-in-out;
-          -o-transition: height 200ms ease-in-out;
-          transition: height 200ms ease-in-out;
-      }
-      
-      .c-admin{
-          right: calc(50% - 20px);
-          top: 80px;
-          margin-right: -450px;
-          -webkit-transition: top 200ms ease-in-out;
-          -moz-transition: top 200ms ease-in-out;
-          -o-transition: top 200ms ease-in-out;
-          transition: top 200ms ease-in-out;
-      }
-      
-      .c-header.is-fixed .c-admin {
-          top: 65px;
-          -webkit-transition: top 200ms ease-in-out;
-          -moz-transition: top 200ms ease-in-out;
-          -o-transition: top 200ms ease-in-out;
-          transition: top 200ms ease-in-out;
-      }
-      
-  
-  }
-  
+
+
+
 
 body{
     letter-spacing: -0.05em;
@@ -1060,6 +948,9 @@ body{
       background: rgb(144,2,234);
       background: linear-gradient(90deg,  rgba(0,23,195,1) 0%, rgba(144,2,234,1) 100%);
 }
+.c-cta--footer{
+    border-radius: 0;
+}
 .c-cta__title{
       color: #fff;
       font-size: 1.8em;
@@ -1074,7 +965,7 @@ body{
       width: 100%;
       padding: 13px 17px;
       font-size: 1.5em;
-      border-radius: 15px;
+      border-radius: 25px;
       background: #fff;
 }
 .c-cta__btn{
@@ -1084,9 +975,9 @@ body{
     margin-top: 15px;
     background: #000020;
     color: #fff;
-    padding: 13px 30px;
+    padding: 15px 30px;
       font-size: 1.5em;
-      border-radius: 15px;
+      border-radius: 25px;
       font-weight: 700;
 }
 
@@ -1120,4 +1011,183 @@ body{
     font-size: 1.4em;
     line-height: 1.4;
     opacity: .8;
+}
+.c-benefits-item__icon{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 14px;
+    background-image: url(images/icon-1.svg);
+}
+
+
+@media (min-width:768px){
+
+    .c-title{
+        font-size: 4em;
+    }
+
+    /* HERO */
+
+    .c-hero{
+        height: 80vh;
+        min-height: 650px;
+    }
+    .c-hero-title{
+        font-size: 6em;
+    }
+
+    .c-hero-title__mark{
+        position: relative;
+        text-shadow:none;
+
+    }
+    .c-hero-title__mark::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -15px;
+        right: -15px;
+        height: 100%;
+        padding: 0 10px;
+        background: rgb(144,2,234);
+        background: linear-gradient(90deg,  rgba(0,23,195,1) 0%, rgba(144,2,234,1) 100%);
+        border-radius: 15px;
+        z-index: -1;  
+    }
+
+    .c-hero__text{
+        margin-top: 40px;
+        font-size: 2.1em;
+        max-width: 500px;
+    }
+
+    .c-cta{
+        margin-top: 90px;
+    }
+    .c-cta--footer{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .c-cta__title,
+    .c-cta__form{
+        display: inline-block;
+        vertical-align: middle;
+        width: 50%;
+        text-align: left;
+        margin-top: 0;
+        padding: 0 15px;
+    }
+    .c-cta__title{
+        font-size: 2em;
+    }
+    .c-cta__form{
+        position: relative;
+    }
+    .c-cta__input{
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-right: 100px;
+        border-radius: 25px;
+    }
+    .c-cta__btn{
+        position: absolute;
+        right:20px;
+        top: 50%;
+        margin-top: -23px;
+        width: 100px;
+        padding: 14px 15px;
+        border-radius: 25px;
+    }
+
+   
+
+}
+
+@media (min-width:980px){
+
+    .c-title{
+        font-size: 5.4em;
+    }
+
+    /* HERO */
+
+    .c-hero{
+        height: 100vh;
+        padding-top: 100px;
+        text-align: center;
+        background-position: 60% -180px;
+    }
+    .c-hero::before{
+        background: linear-gradient(0deg, rgba(0,0,32,0.98) 0%, rgba(0,0,32,0.3) 100%);
+  }
+    .c-hero__wrapper{
+        text-align: left;
+    }
+    .c-hero-title{
+        font-size: 6.8em;
+    }
+
+    .c-cta{
+        margin-top: 100px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    .c-cta--footer{
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .c-cta__title,
+    .c-cta__form{
+        padding: 0 30px
+    }
+    .c-cta--footer .c-cta__title{
+        font-size: 3em;
+    }
+    .c-cta__btn{
+        right: 35px;
+    }
+    .c-cta__input{
+        padding-right: 120px;
+    }
+    .c-cta--footer .c-cta__input{
+        font-size: 1.7em;
+    }
+
+     /* BENEFITS */
+
+     .c-benefits-list{
+        margin-top: 50px;
+    }
+    .c-benefits-item{
+        padding: 0 20px;
+        width: 33.33333%;
+    }
+    .c-benefits-item__holder::after{
+        content: "";
+        display: block; 
+        padding-bottom: 100%;
+    }
+    .c-benefits-item__holder{
+        position: relative;
+    }
+    .c-benefits-item__aligner{
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        right: 30px;
+        transform: translateY(-50%);
+
+    }
+    .c-benefits-item__title{
+        font-size: 2.5em;
+    }
+    .c-benefits-item__text{
+        font-size: 1.7em;
+    }
+    .c-benefits-item__icon{
+        width: 45px;
+        height: 45px;
+    }
+
 }

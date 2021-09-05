@@ -15,8 +15,8 @@ const Index = ({ data, location }) => {
       <section className="c-hero">
         <div className="o-wrapper c-hero__wrapper">
           <h2 className="c-hero-title">
-            Tomá mejores decisiones‏‏‎ ‎‏‏‎<br/>
-          <span className="c-hero-title__mark">y generá más‎‎‎‎‎‎‎‎‎‎‎‎ rentabilidad</span>
+            Tomá mejores decisiones‏‏‎ ‎‏‏‎y <br />
+            <span className="c-hero-title__mark"> generá más‎‎‎‎‎‎‎‎‎‎‎‎ rentabilidad</span>
           </h2>
           <p className="c-hero__text">
             Lucy es la plataforma que te permite recibir recomendaciones de inversión <strong>precisas</strong> y en el <strong>momento justo</strong>.
@@ -25,7 +25,7 @@ const Index = ({ data, location }) => {
           <div className="c-cta">
             <p className="c-cta__title">Registrate para el pre-lanzamiento y <strong>obtené 6 meses de recomendaciones gratis</strong></p>
             <form className="c-cta__form">
-              <input className="c-cta__input" placeholder="Ingresa tu email..." />
+              <input className="c-cta__input" placeholder="Ingresá tu email..." />
               <button type="submit" className="c-cta__btn">Enviar</button>
             </form>
           </div>
@@ -35,40 +35,47 @@ const Index = ({ data, location }) => {
       {/* BENEFITS */}
       <section className="c-benefits o-section">
         <div className="o-wrapper">
-          <h2 className="c-title">Por qué usar Lucy?</h2>
+          <h2 className="c-title">¿Por qué usar Lucy?</h2>
           <ul className="c-benefits-list">
 
             <li className="c-benefits-item">
               <div className="c-benefits-item__holder">
-                <span className="c-benefits-item__icon"></span>
-                <h3 className="c-benefits-item__title">Es más preciso</h3>
-                <p className="c-benefits-item__text">Comprar y vender acciones
-es fácil, lo difícil es saber
-cuándo. Lucy te ayuda a
-generar rentabilidad con
+                <div className="c-benefits-item__aligner">
+                  <span className="c-benefits-item__icon"></span>
+                  <h3 className="c-benefits-item__title">Es más preciso</h3>
+                  <p className="c-benefits-item__text">Comprar y vender acciones
+  es fácil, lo difícil es saber
+  cuándo. Lucy te ayuda a
+  generar rentabilidad con
 pasos firmes y seguros.</p>
+                </div>
               </div>
             </li>
             <li className="c-benefits-item">
               <div className="c-benefits-item__holder">
-                <span className="c-benefits-item__icon"></span>
-                <h3 className="c-benefits-item__title">Es más preciso</h3>
-                <p className="c-benefits-item__text">Comprar y vender acciones
-es fácil, lo difícil es saber
-cuándo. Lucy te ayuda a
-generar rentabilidad con
-pasos firmes y seguros.</p>
+                <div className="c-benefits-item__aligner">
+
+                  <span className="c-benefits-item__icon"></span>
+                  <h3 className="c-benefits-item__title">Es más simple</h3>
+                  <p className="c-benefits-item__text">No necesitás pasarte leyendo
+  o saber de análisis, mucho
+  menos cómo hacer un robot.
+  Lucy se encarga de encontrar
+las oportunidades por vos.</p>
+                </div>
               </div>
             </li>
             <li className="c-benefits-item">
               <div className="c-benefits-item__holder">
-                <span className="c-benefits-item__icon"></span>
-                <h3 className="c-benefits-item__title">Es más preciso</h3>
-                <p className="c-benefits-item__text">Comprar y vender acciones
-es fácil, lo difícil es saber
-cuándo. Lucy te ayuda a
-generar rentabilidad con
-pasos firmes y seguros.</p>
+                <div className="c-benefits-item__aligner">
+                  <span className="c-benefits-item__icon"></span>
+                  <h3 className="c-benefits-item__title">Lo hacés vos</h3>
+                  <p className="c-benefits-item__text">Usa la plataforma que
+  prefieras y mantené las
+  decisiones sobre tu dinero,
+  Lucy te aconseja en el camino
+para hacerlo crecer.</p>
+                </div>
               </div>
             </li>
 
@@ -82,19 +89,21 @@ pasos firmes y seguros.</p>
       {/* HOW IT WORKS */}
       <section className="c-works o-section">
         <div className="o-wrapper">
-          <h2 className="c-title">Cómo funciona?</h2>
+          <h2 className="c-title">¿Cómo funciona?</h2>
 
         </div>
       </section>
 
 
       {/* CTA */}
-      <div className="c-cta">
-        <p className="c-cta__title">Registrate para el pre-lanzamiento y obtené 6 meses de recomendaciones gratis</p>
-        <form className="c-cta__form">
-          <input className="c-cta__input" />
-          <button type="submit" className="c-cta__btn"></button>
-        </form>
+      <div className="c-cta c-cta--footer">
+        <div className="o-wrapper">
+          <p className="c-cta__title">Registrate para el pre-lanzamiento y <strong>obtené 6 meses de recomendaciones gratis</strong></p>
+          <form className="c-cta__form">
+            <input className="c-cta__input" placeholder="Ingresá tu email..." />
+            <button type="submit" className="c-cta__btn">Enviar</button>
+          </form>
+        </div>
       </div>
 
 

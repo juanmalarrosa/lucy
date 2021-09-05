@@ -6,11 +6,11 @@ const Layout = ({ location, title, children }) => {
   return (
     <>
       {/* HEADER */}
-       <header className="c-header is-open" id="c-header">
+       <header className="c-header " id="c-header">
         <div className="c-header__holder">
           <div className="c-header__wrapper o-wrapper o-align-middle">{/*
                     */}<div className="o-align-middle__aligner">
-              {/*<button type="button" className="c-header__nav-btn js-show-nav is-active" title="Ver/ocultar menú"><span className="c-header__hamburger" /></button> */}
+              <button type="button" className="c-header__nav-btn js-show-nav" title="Ver/ocultar menú"><span className="c-header__hamburger" /></button>
               <h1 className="c-header__h1">
                 <a href="/" className="c-header__logo" tabIndex={-1}>
                   <span className="u-hidden-for-seo">Lucy</span>
@@ -23,10 +23,10 @@ const Layout = ({ location, title, children }) => {
                       <h2 className="u-hidden-for-seo">Navegación</h2>
                       <ul className="c-nav__items">
                         <li className="c-nav__item">
-                          <a className="c-nav__link js-nav__anchor" href="#benefits">Por qué usar Lucy?</a>
+                          <a className="c-nav__link js-nav__anchor" href="#benefits">¿Por qué usar Lucy?</a>
                         </li>
                         <li className="c-nav__item">
-                          <a className="c-nav__link js-nav__anchor" href="#software">Cómo funciona?</a>
+                          <a className="c-nav__link js-nav__anchor" href="#software">¿Cómo funciona?</a>
                         </li>
                       </ul>
                       <ul className="c-nav__buttons">
@@ -50,12 +50,13 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
 
 
-      {/* FOOTER */}
+      {/* FOOTER 
       <footer className="c-footer">
         <div className="o-wrapper">
           Lucy
         </div>
       </footer>
+      */}
 
 
     </>

@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const Seo = ({ description, lang, meta, title }) => {
 
-  const metaDescription = description 
+  const metaDescription = 'Lucy es la plataforma que te permite recibir recomendaciones de inversión precisas y en el momento justo.' 
 
   return (
     <Helmet
@@ -22,6 +22,10 @@ const Seo = ({ description, lang, meta, title }) => {
       title={title}
      
       meta={[
+        {
+          name: `robots`,
+          content: `index,follow`,
+        },
         {
           name: `description`,
           content: metaDescription,
@@ -39,20 +43,20 @@ const Seo = ({ description, lang, meta, title }) => {
           content: `website`,
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
+          property: `og:image:width`,
+          content: `1200`,
         },
         {
-          name: `twitter:creator`,
-          content:  ``,
+          property: `og:image:height`,
+          content: `630`,
         },
         {
-          name: `twitter:title`,
-          content: title,
+          property: `og:image`,
+          content: '../images/819D1B95C199EE77.jpg',
         },
         {
-          name: `twitter:description`,
-          content: metaDescription,
+          name: `keywords`,
+          content: 'inversion,brokers',
         },
       ].concat(meta)}
     />

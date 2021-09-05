@@ -52,11 +52,11 @@ const Seo = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:image`,
-          content: '/static/images/avatar.jpg',
+          content: '/images/avatar.jpg',
         },
         {
           name: `keywords`,
-          content: 'inversion,brokers',
+          content: 'inversion,brokers,bot',
         },
       ].concat(meta)}
     />

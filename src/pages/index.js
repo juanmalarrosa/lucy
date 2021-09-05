@@ -96,7 +96,7 @@ para hacerlo crecer.</p>
 
 
       {/* CTA */}
-      <div className="c-cta c-cta--footer">
+      <div id="cta" className="c-cta c-cta--footer">
         <div className="o-wrapper">
           <p className="c-cta__title">Registrate para el pre-lanzamiento y <strong>obtené 6 meses de recomendaciones gratis</strong></p>
           <form className="c-cta__form">

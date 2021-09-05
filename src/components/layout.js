@@ -31,9 +31,9 @@ const Layout = ({ location, title, children }) => {
                       </ul>
                       <ul className="c-nav__buttons">
                         <li className="c-nav__item-btn">
-                          <button className="c-nav__btn c-nav__btn--admin c-admin-btn-desktop js-show-admin c-btn" type="button">
+                          <a href="#cta" className="c-nav__btn c-nav__btn--admin c-admin-btn-desktop js-show-admin c-btn js-nav__anchor">
                             Quiero registrarme!
-                          </button>
+                          </a>
                         </li>
                       </ul>
                     </nav>{/* .c-nav */}

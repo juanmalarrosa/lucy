@@ -590,7 +590,7 @@ img{
     
     .c-header__nav{
         padding-left: 240px;
-        padding-right: 240px;
+        padding-right: 270px;
         text-align: right;
     }
     
@@ -603,14 +603,14 @@ img{
         margin-left: 0;
     }
     .c-nav__link{
-        font-size: 1.6rem;
-        font-weight: 700;
+        font-size: 1.8rem;
+        font-weight: 400;
     }
     .c-nav__buttons{
         right: 60px;
     }
     .c-nav__btn{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         font-weight: 700;
     }
     
@@ -1123,6 +1123,7 @@ body{
         padding-bottom: 18px;
         padding-right: 100px;
         border-radius: 25px;
+        font-size: 1.6em;
     }
     .c-cta__btn{
         position: absolute;

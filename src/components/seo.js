@@ -52,7 +52,7 @@ const Seo = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:image`,
-          content: '../images/819D1B95C199EE77.jpg',
+          content: '/static/images/avatar.jpg',
         },
         {
           name: `keywords`,

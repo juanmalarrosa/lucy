@@ -8,7 +8,7 @@ const Index = ({ data, location }) => {
   return (
 
     <Layout location={location} title={'h'}>
-      <Seo title="Lucy" />
+      <Seo title="Lucy | Generá mas rentabilidad" />
 
 
       {/* HERO */}
@@ -23,7 +23,7 @@ const Index = ({ data, location }) => {
           </p>
 
           <div className="c-cta">
-            <p className="c-cta__title">Registrate para el pre-lanzamiento y <strong>obtené 6 meses de recomendaciones gratis</strong></p>
+            <p className="c-cta__title">Registrate para el pre-lanzamiento y <strong>obtené <br/> 6 meses de recomendaciones gratis</strong></p>
             <form className="c-cta__form">
               <input className="c-cta__input" placeholder="Ingresá tu email..." />
               <button type="submit" className="c-cta__btn">Enviar</button>

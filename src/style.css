@@ -1124,6 +1124,8 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
+    max-width: 290px;
+    margin: 0 auto;
 
 }
 .c-works-item:nth-child(2) .c-works-item__img{
@@ -1308,7 +1310,10 @@ body{
         line-height: 1.4;
         margin-top: 20px;
     }
-    .c-works-item__img{}
+    .c-works-item__img{
+        max-width:none;
+        margin: auto;
+    }
 
 
 }

@@ -1331,6 +1331,7 @@ body{
         padding-top: 100px;
         text-align: center;
         background-position: 60% -180px;
+        background-attachment: fixed;
     }
     .c-hero::before{
         background: linear-gradient(0deg, rgba(0,0,32,0.98) 0%, rgba(0,0,32,0.7) 100%);
